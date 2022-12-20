@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Borbola_Anamaria_Lab7.ListPage"
              Title="ListPage">
-    <ContentPage.Content xmlns:local="clr-namespace:Borbola_Anamaria_Lab7.Models">
+    <ContentPage.Content xmlns:local="clr-namespace:Borbola_Anamaria_Lab7.Models">
+
         <StackLayout Margin="20">
         <Editor Placeholder="Enter the description of the shopping list"
  Text="{Binding Description}"
@@ -11,7 +12,8 @@
         <Editor.Behaviors>
         <local:ValidationBehaviour />
         </Editor.Behaviors>
-</Editor>
+
+</Editor>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -32,7 +34,9 @@
                 </ListView.ItemTemplate>
             </ListView>
             <Button Text="Add/Choose Item to buy" MaximumWidthRequest="300"
-Clicked="OnChooseButtonClicked"/>            <Button Text="Delete Item" MaximumWidthRequest="300"
+Clicked="OnChooseButtonClicked"/>
+            <Button Text="Delete Item" MaximumWidthRequest="300"
 Clicked="OnDeleteClicked"/>
-        </StackLayout></ContentPage.Content>
+        </StackLayout>
+</ContentPage.Content>
 </ContentPage>

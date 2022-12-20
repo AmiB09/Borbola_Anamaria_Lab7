@@ -21,10 +21,7 @@ public partial class ListPage : ContentPage
         await App.Database.DeleteShopListAsync(slist);
         await Navigation.PopAsync();
     }
-    async void OnDeleteClicked(object sender, EventArgs e)
-    {
-
-    }
+   
     async void OnChooseButtonClicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new ProductPage((ShopList)
