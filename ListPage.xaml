@@ -35,8 +35,7 @@
             </ListView>
             <Button Text="Add/Choose Item to buy" MaximumWidthRequest="300"
 Clicked="OnChooseButtonClicked"/>
-            <Button Text="Delete Item" MaximumWidthRequest="300"
-Clicked="OnDeleteClicked"/>
+           
         </StackLayout>
 </ContentPage.Content>
 </ContentPage>
